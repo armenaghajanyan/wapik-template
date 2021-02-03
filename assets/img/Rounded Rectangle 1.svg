@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 50" width="230" height="50">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #6fb048 } 
+	</style>
+	<g id="masthead">
+		<g id="headline">
+			<g id="button">
+				<path id="Rounded Rectangle 1" class="shp0" d="M2.47 0L227.53 0C228.89 0 230 0.9 230 2L230 48C230 49.1 228.89 50 227.53 50L2.47 50C1.11 50 0 49.1 0 48L0 2C0 0.9 1.11 0 2.47 0Z" />
+			</g>
+		</g>
+	</g>
+</svg>
