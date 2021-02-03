@@ -8,7 +8,9 @@ function showNav() {
 }
 window.addEventListener("click", (e) => {
     const navOpen = document.querySelector('.burger-nav-bar');
-    if(!e.composedPath().includes(document.querySelector(".burger")) && navOpen.style.animationName === "nav-bar-open") {
+    if(!e.composedPath().includes(document.querySelector(".burger")) &&
+        !e.composedPath().includes(document.querySelector(".burger-nav-bar")) &&
+        navOpen.style.animationName === "nav-bar-open") {
         navOpen.style.animationName = "nav-bar-close";
     }
 })

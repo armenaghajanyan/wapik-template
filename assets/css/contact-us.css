@@ -86,7 +86,7 @@
     display: none;
 }
 
-.burger-part-one, .burger-part-two, .burger-part-three {
+.burger-part {
     width: 35px;
     height: 5px;
     background-color: #0f5f5c;
