@@ -82,25 +82,77 @@
 }
 
 .burger {
-    transition: all 3s ease-in-out;
     position: relative;
+    display: none;
 }
 
 .burger-part {
-    display: none;
     width: 35px;
     height: 5px;
     background-color: #0f5f5c;
     margin: 6px 0;
 }
 
+.burger-nav-bar {
+    z-index: 1;
+}
+
+.burger {
+    display: none;
+}
+
+.burger-nav-bar {
+    top: -320px;
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    list-style: none;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    text-decoration: none;
+    right: 0;
+    background-color: #0f5f5c;
+    opacity: 70%;
+}
+
+
+@keyframes nav-bar-open {
+    from {top: -230px;}
+    to {top: 85px;}
+}
+
+@keyframes nav-bar-close {
+    from {top: 85px;}
+    to {top: -230px;}
+}
+
+.burger-nav-bar > li {
+    margin: 20px 0;
+}
+
+.burger-nav-link {
+    text-decoration: none;
+    color: rgb(187, 196, 196);
+    transform-origin: top center;
+    animation: nav-down 1s ease;
+}
+
+@keyframes nav-down {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .nav-bar {
     list-style: none;
     display: flex;
     flex-direction: row;
     text-align: center;
-    transition: max-height 2s;
 }
 
 .nav-link {
@@ -241,33 +293,12 @@ input[type="number"]::-webkit-inner-spin-button {
         padding: 0 15px;
     }
 
-    .burger-part {
+    .burger {
         display: block;
     }
 
-    .burger:link + .nav-bar {
-        display: flex;
-    }
-
     .nav-bar {
-        flex-direction: column;
         display: none;
-        position: absolute;
-        right: 0;
-        top: 85px;
-        background-color: #0f5f5c;
-        z-index: 1;
-        text-align: center;
-        opacity: 75%;
-        transition: all 2s ease;
-    }
-
-    nav li:hover ul {
-        visibility: visible;
-    }
-
-    .nav-bar > li {
-        margin: 20px;
     }
 
     .get-started {

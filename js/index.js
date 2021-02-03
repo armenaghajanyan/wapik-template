@@ -1,18 +1,16 @@
 function showNav() {
-    const navOpen = document.getElementsByClassName("nav-bar")[0];
-    if(navOpen.style.display === "flex") {
-        navOpen.style.display = "none";
+    const navOpen = document.getElementsByClassName("burger-nav-bar")[0];
+    if (!navOpen.style.animationName || navOpen.style.animationName === "nav-bar-close") {
+        navOpen.style.animationName = "nav-bar-open";
     } else {
-        navOpen.style.display = "flex";
+        navOpen.style.animationName = "nav-bar-close";
     }
 }
 
 addEventListener("resize", () => {
-    const navOpen = document.getElementsByClassName("nav-bar")[0];
-    if(window.innerWidth > 1024) {
-        navOpen.style.display = "flex";
-    } else {
-        navOpen.style.display = "none";
-
+        const navOpen = document.getElementsByClassName("burger-nav-bar")[0];
+        if(window.innerWidth > 1024) {
+            navOpen.style.animationName = "";
+        }
     }
-})
+)
