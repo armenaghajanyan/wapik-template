@@ -14,6 +14,8 @@ window.addEventListener("click", (e) => {
         navOpen.style.animationName = "nav-bar-close";
     }
 })
+
+// sdfsdfsdf
 window.addEventListener("resize", () => {
         const navOpen = document.getElementsByClassName("burger-nav-bar")[0];
         if(window.innerWidth > 1024) {
