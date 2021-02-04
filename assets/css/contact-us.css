@@ -375,6 +375,34 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
+/* Footer */
+
+thead {
+    color: #0f5f5c;
+    font-size: 13px;
+    line-height: 22px;
+    font-family: Roboto-Medium, sans-serif;
+    text-align: left;
+}
+
+#logo {
+    font-size: 22px;
+    line-height: 35px;
+    text-transform: uppercase;
+    font-family: Proxima-Nova-Bold, sans-serif
+}
+
+tbody {
+    font-size: 13px;
+    line-height: 28px;
+    color: #83a7a5;
+    font-family: Roboto-Regular, sans-serif
+}
+
+#mail:not(::first-letter) {
+    color: #0f5f5c;
+}
+
 @media (max-width: 768px) {
     .intro {
         display: none;
