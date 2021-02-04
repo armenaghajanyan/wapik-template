@@ -135,6 +135,7 @@
                     <input type="email" class="form-row" placeholder="Email">
                     <input type="number" class="form-row" placeholder="Phone">
                     <textarea class="form-row" id="message" placeholder="Message"></textarea>
+                    <button class="message-btn">Send Message</button>
                 </div>
             </div>
             <div class="address">
@@ -273,43 +274,68 @@
 <!-- Footer -->
 <footer>
     <div class="container">
-        <table>
-            <thead>
-            <tr>
-                <th id="logo">Wapik</th>
-                <th>Company</th>
-                <th>Others</th>
-                <th>Newsletter</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td id="mail">@: hi@wapik.com</td>
-                <td>Home</td>
-                <td>Help & Support</td>
-                <td rowspan="2">Subscribe to our newsletter and get all
-                    the cool news
-                </td>
-            </tr>
-            <tr>
-                <td>p: +62 202 555 0117</td>
-                <td>About Us</td>
-                <td>Privacy Policy</td>
-            </tr>
-            <tr>
-                <td rowspan="2">a: 610 Overlook Circle Suite 323
-                    Kalamazoo, MI 49009
-                </td>
-                <td>Pricing</td>
-                <td>Terms</td>
-                <td><input></td>
-            </tr>
-            <tr>
-                <td>Contact Us</td>
-                <td>Sitemap</td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="footer-bar">
+            <div class="footer-head">
+                <div class="footer-logo">Wapik</div>
+                <div class="footer-tools-text">@: hi@wapik.com</div>
+                <div class="footer-tools-text">p: +62 202 555 0117</div>
+                <div class="footer-tools-text">a: 610 Overlook Circle Suite 323 Kalamazoo, MI 49009</div>
+            </div>
+            <div class="footer-body">
+                <div class="company">
+                    <div class="footer-menu">Company</div>
+                    <div class="footer-tools-text">Home</div>
+                    <div class="footer-tools-text">About Us</div>
+                    <div class="footer-tools-text">Pricing</div>
+                    <div class="footer-tools-text">Contact Us</div>
+                </div>
+                <div class="others">
+                    <div class="footer-menu">Others</div>
+                    <div class="footer-tools-text">Help & Support</div>
+                    <div class="footer-tools-text">Privacy Policy</div>
+                    <div class="footer-tools-text">Terms</div>
+                    <div class="footer-tools-text">Sitemap</div>
+                </div>
+                <div class="newsletter">
+                    <div class="footer-menu">Newsletter</div>
+                    <div class="footer-tools-text">Subscribe to our newsletter and get all
+                        the cool news
+                    </div>
+                    <div class="send-email"><input class="enter-email" type="text" placeholder="Enter Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="send-icon" class="address-tools-img"
+                             viewBox="3 3 40 40" width="18" height="18">
+                            <defs>
+                                <image width="1024" height="1024" id="img5" href="data:image/svg+xml;base64,PHN2ZyB4bWxu
+                                cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHdpZHRoPSIxMDI0
+                                IiBoZWlnaHQ9IjEwMjQiPgoJPGRlZnM+CgkJPGNsaXBQYXRoIGNsaXBQYXRoVW5pdHM9InVzZXJTcGFjZU9uVXNl
+                                IiBpZD0iY3AxIj4KCQkJPHBhdGggZD0iTTAgMEwxMDI0IDBMMTAyNCAxMDI0TDAgMTAyNFoiIC8+CgkJPC9jbGlw
+                                UGF0aD4KCQk8Y2xpcFBhdGggY2xpcFBhdGhVbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJjcDIiPgoJCQk8cGF0
+                                aCBkPSJNMCAwTDEwMjQgMEwxMDI0IDEwMjRMMCAxMDI0TDAgMFoiIC8+CgkJPC9jbGlwUGF0aD4KCTwvZGVmcz4K
+                                CTxzdHlsZT4KCQl0c3BhbiB7IHdoaXRlLXNwYWNlOnByZSB9CgkJLnNocDAgeyBmaWxsOiAjMDAwMDAwIH0gCgk8
+                                L3N0eWxlPgoJPGcgaWQ9IlBhZ2UgMSIgY2xpcC1wYXRoPSJ1cmwoI2NwMSkiPgoJCTxnIGlkPSJNYXNrIiBjbGlw
+                                LXBhdGg9InVybCgjY3AyKSI+CgkJCTxwYXRoIGlkPSJQYXRoIDIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xhc3M9
+                                InNocDAiIGQ9Ik05NjAgNjRMNzM2IDk2MEw1MTIgNzM2TDM1MiA5NjBMMzIwIDY0MEw2NCA1NDRMOTYwIDY0Wk04
+                                NjIuOCAxODguNkwyMTguOCA1MzMuNkwzODQgNTk1LjZMNzY4IDI4OEw1MTIgNjQwTDcwMS40IDgzNC44TDg2Mi44
+                                IDE4OC42WiIgLz4KCQk8L2c+Cgk8L2c+Cjwvc3ZnPg=="/>
+                            </defs>
+                            <style>
+                                tspan {
+                                    white-space: pre;
+                                }
+                            </style>
+                            <g id="footer">
+                                <g id="top footer">
+                                    <g id="newsletter">
+                                        <use id="Vector Smart Object" href="#img5"
+                                             transform="matrix(0.039,0,0,0.039,-1.01,-1.01)"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 </body>
